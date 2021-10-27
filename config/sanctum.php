@@ -48,4 +48,6 @@ return [
         'encrypt_cookies' => App\Http\Middleware\EncryptCookies::class,
     ],
 
+    // not found in the docs but allows for a switch of sanctum to use a different stateful guard
+    'guard' => 'seller'
 ];
